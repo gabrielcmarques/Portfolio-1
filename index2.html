@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <meta
+      name="description"
+      content="Programador desenvolvedor de aplicativos."
+    />
+    <!-- ADICIONE META DESCRIÇÕES ABAIXO PARA AJUDAR NA DESCOBERTA DO WEBSITE, Ex: (React, CSS etc) -->
+    <meta
+      name="keywords"
+      content="Trabalho em equipe, Python, Javascript, Html, CSS, Docker, SQL Database"
+    />
+    <!-- ------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <main role="main">
+      <!---------------  PARTE DE PERFIL --------------------->
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>Sobre mim</h2>
+          <div class="about__content">
+            <div class="about__text">
+              <!------------------- TROQUE PELO SEU ------------------>
+              <p>
+                Sou um programador especializado no back-end. Sempre fui
+                entusiasta na área de computação, decidi ir para o caminho da
+                programação e automação de sistemas, nos últimos 5 anos tenho me
+                dedicado para adquirir o conhecimento necessário para trabalhar
+                com algo que eu gosto estudando programação.
+              </p>
+              <!------ LINK DO SEU CURRICULO PDF HOSTEADO EM ALGUM LUGAR  -------->
+              <a href="#" class="btn">Meu currículo</a>
+            </div>
+
+            <!----------- SUA FOTO NA PASTA IMAGES. USE SEMPRE .WEBP ---------->
+            <div class="about__photo-container">
+              <!-- Add a nice photo of yourself -->
+              <img class="about__photo" src="./images/doge.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ---------------------------------------------------------------- -->
+    </main>
+
+    <!------------------ PARTE DE CONTATO ------------------------------>
+    <section class="contact" id="contact">
+      <div class="row">
+        <h2>Entre em Contato</h2>
+        <div class="contact__info">
+          <!-------------- COLOQUE ALGO AQUI SEILA  ------------------>
+          <p>
+            Você está procurando um site de rápido desempenho e fácil de usar
+            para representa seu produto ou empresa? ou procurando qualquer tipo
+            de consulta? ou quer tirar dúvidas? ou tem algum conselho para mim
+            ou apenas quer dizer "Oi 👋" em qualquer caso, sinta-se à vontade
+            para me avisar. EU farei o meu melhor para responder de volta. 😊 A
+            maneira mais rápida de entrar em contato com me é através de um
+            e-mail.
+          </p>
+          <!-------------- COLOQUE O SEU ]GMAIL AQUI  ------------------>
+          <a href="mailto:MEUEMAIL@gmail.com" class="btn" target="_blank"
+            >MEUEMAIL@gmail.com</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- ------------------------------------------------------------------ -->
+
+    <!-------------  FOOTER CONTENDO BOTOES PARA MIDIAS SOCIAIS --------------->
+
+    <footer role="contentinfo" class="footer">
+      <div class="row">
+        <!--------- TROQUE O LINK DENTRO DOS HREFS PELAS SUAS MIDIAS. COMENTE AS <li> DAS QUE VOCÊ NÃO DESEJA MOSTRAR ---------->
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="" title="Link do meu perfil no Twitter">
+              <img
+                src="./images/twitter.svg"
+                class="footer__social-image"
+                alt="Twitter"
+              />
+            </a>
+          </li>
+
+          <li class="footer__social-link-item">
+            <a
+              href="#"
+              title="Link do meu Perfil no Github"
+            >
+              <img
+                src="./images/github.svg"
+                class="footer__social-image"
+                alt="Github"
+              />
+            </a>            
+          </li>
+
+          <li class="footer__social-link-item">
+            <a href="#" title="Link do meu Codepen">
+              <img
+                src="./images/codepen.svg"
+                class="footer__social-image"
+                alt="Codepen"
+              />
+            </a>
+          </li>
+
+          <li class="footer__social-link-item">
+            <a href="#">
+              <img
+                src="./images/linkedin.svg"
+                title="Link do meu Perfil no Linkedin"
+                class="footer__social-image"
+                alt="Linkedin"
+              />
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </footer>
+    <!-- ------------------------------------------------------------------ -->
+
+    <a href="#top" class="back-to-top" title="Back to Top">
+      <img
+        src="./images/arrow-up.svg"
+        alt="Back to Top"
+        class="back-to-top__image"
+      />
+    </a>
+    <script src="./index.js"></script>
+  </body>
+
+  <style>
+
+/* ---------- DÊ UM JEITO DE DEIXAR ESSES ICONES DO FOOTER MAIS APARENTES --------- */
+
+.footer__social-links {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    list-style: none;
+}
+
+.footer__social-link-item:not(:last-of-type) {
+    margin-right: 3rem;
+}
+
+.footer__social-image {
+    height: 4rem;
+}
+
+.footer__github-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__github-buttons iframe {
+    height: 2.5rem;
+    width: 84px;
+    transform: translateY(3px);
+}
+
+@media(max-width: 500px) {
+    .footer {
+        padding: 3rem 0;
+    } 
+}
+
+/* ------------------------------------- */
+
+  </style>
+</html>
